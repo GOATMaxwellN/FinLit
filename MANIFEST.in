@@ -1,0 +1,3 @@
+graft finlit/static
+graft finlit/templates
+global-exclude *.pyc
