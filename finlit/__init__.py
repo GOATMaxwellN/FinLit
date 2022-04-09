@@ -7,4 +7,7 @@ def create_app(test_config=None):
     if test_config:
         app.config.from_mapping(test_config)
 
+    from . import home
+    app.register_blueprint(home.bp)
+
     return app
