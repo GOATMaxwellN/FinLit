@@ -4,11 +4,22 @@
         <meta charset="utf-8">
         <meta name="description" content="The site for youth to expand their financial knowledge!">
         <title>FinLit</title>
+        <link href="{{ url_for('static', filename='normalize.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='home/home.css') }}" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <h1>FinLit</h1>
-            <p>Let's learn about money.</p>
-        </div>
+        <header>
+            <span>FinLit</span>
+            <div class="log-in-sign-up-btns">
+                <button>Log in</button>
+                <button>Sign up</button>
+            </div>
+        </header>
+        <main>
+            <div class="center-text">
+                <h1>FinLit</h1>
+                <span>Let's learn about money.</span>
+            </div>
+        </main>
     </body>
 </html>
