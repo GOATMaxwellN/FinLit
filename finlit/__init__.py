@@ -10,4 +10,7 @@ def create_app(test_config=None):
     from . import home
     app.register_blueprint(home.bp)
 
+    from . import dashboard
+    app.register_blueprint(dashboard.bp)
+
     return app
