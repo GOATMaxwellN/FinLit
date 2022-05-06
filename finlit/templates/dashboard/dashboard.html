@@ -8,32 +8,41 @@
     <link href="{{ url_for('static', filename='dashboard/dashboard.css') }}" rel="stylesheet">
 </head>
 <body>
-    <header><span>Header</span></header>
+    <header>
+        <h1 class="title-finlit">FinLit</h1>
+    </header>
     <main>
-        <div class="card">
-            <div class="card__header">
-                <img src="{{ url_for('static', filename='dashboard/budgeting_and_saving_card_image.webp') }}" alt="A calculator with the word 'budget' printed on its display, surrounded by cash and coins">
+        <a>
+            <div class="card">
+                <div class="card__header">
+                    <img src="{{ url_for('static', filename='dashboard/budgeting_and_saving_card_image.webp') }}" alt="A calculator with the word 'budget' printed on its display, surrounded by cash and coins">
+                </div>
+                <div class="card__body">
+                    <h4>Budgeting and saving</h4>
+                    <p>Learn about the value of budgeting and how it can help you take control of your finances.</p>
+                </div>
+                <div class="card__footer">
+                    <span>Estimated time: 3hrs | Games to play: 2</span>
+                </div>
             </div>
-            <div class="card__body">
-                <h4>Budgeting and saving</h4>
-                <p>Learn about the value of budgeting and how it can help you take control of your finances.</p>
+        </a>
+        <a>
+            <div class="card">
+                <div class="card__header">
+                    <img src="{{ url_for('static', filename='dashboard/time_value_of_money_card_image.jpg') }}" alt="Several stacks of coins, one bigger than the last">
+                </div>
+                <div class="card__body">
+                    <h4>Time Value of Money</h4>
+                    <p>Learn about how money can time travel and how to make it work for you.</p>
+                </div>
+                <div class="card__footer">
+                    <span>Estimated time: 3hrs | Games to play: 2</span>
+                </div>
             </div>
-            <div class="card__footer">
-                <span>Estimated time: 3hrs | Games to play: 2</span>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__header">
-                <img src="{{ url_for('static', filename='dashboard/time_value_of_money_card_image.jpg') }}" alt="Several stacks of coins, one bigger than the last">
-            </div>
-            <div class="card__body">
-                <h4>Time Value of Money</h4>
-                <p>Learn about how money can time travel and how to make it work for you.</p>
-            </div>
-            <div class="card__footer">
-                <span>Estimated time: 3hrs | Games to play: 2</span>
-            </div>
-        </div>
+        </a>
     </main>
+    <section class="newsletter-btn-container">
+        <button class="newsletter-btn">Sign up for the FinLit newsletter!</button>
+    </section>
 </body>
 </html>

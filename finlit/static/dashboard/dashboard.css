@@ -1,9 +1,26 @@
+:root {
+    --main-green: #52BE80;
+}
+
+body {
+    height: 100vh;
+}
+
+.title-finlit {
+    color: var(--main-green);
+    text-align: center;
+}
+
 main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 /* Card design from Lyon Etyo | codepen.io/lyon-etyo | codepen.io/lyon-etyo/pen/OJmyMGd */
@@ -48,4 +65,18 @@ main {
 .card__footer > span {
     color: #666;
     font-size: .8rem;
+}
+/* End of card classes */
+
+.newsletter-btn-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-green);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.newsletter-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem;
 }
