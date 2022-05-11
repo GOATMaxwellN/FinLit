@@ -13,4 +13,7 @@ def create_app(test_config=None):
     from . import dashboard
     app.register_blueprint(dashboard.bp)
 
+    from . import lessons
+    app.register_blueprint(lessons.bp)
+
     return app
