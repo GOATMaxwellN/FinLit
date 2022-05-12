@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Budgeting | FinLit</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Learn about budgeting!">
+        <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='lessons/lessons.css') }}">
+    </head>
+    <body>
+        <header>
+            <h1 class="title-finlit">FinLit</h1>
+        </header>
+        <main>
+            <article>
+                <h4>Budgeting</h4>
+                <p>Budgeting and saving are going to be one of the two most important steps you're going to have to undertake to ensure you
+                have a good financial future, so let's start!</p>
+
+                <h4>What is a budget?</h4>
+                <p>A budget is typically a spreadsheet that shows a detailed estimate of how much money you expect to earn and how much you expect to spend in a specified amount of time, usually a month.</p>
+
+                <h4>How to make a budget?</h4>
+                <p>There are a lot of resources online that you can use to create a budget, but you can start with simple pen and paper! All budgets should include these components:</p>
+                <table class="components-of-a-budget" cellspacing="0">
+                    <tr><th colspan="2">5 components of a budget</th></tr>
+                    <tr>
+                        <td>After tax income</td>
+                        <td>Can be estimated with past paycheques, paystubs, etc...</td>
+                    </tr>
+                    <tr>
+                        <td>Fixed expenses</td>
+                        <td>Rent, internet, cell phone, utility, subscription, insurance, ect...</td>
+                    </tr>
+                    <tr>
+                        <td>Variable expenses</td>
+                        <td>Groceries, dining out, gas, clothing, gifts, entertainment, etc...</td>
+                    </tr>
+                    <tr>
+                        <td>Unexpected expenses</td>
+                        <td>Vacation, buying a car, etc...</td>
+                    </tr>
+                    <tr>
+                        <td>Savings</td>
+                        <td>What is left over after your expenses, can be directed to other stuff</td>
+                    </tr>
+                </table>
+                
+                <p>Here is a simple example of a budget. Your own budget will most likely be a little more involved.</p>
+
+                <img class="example-budget-img" src="{{ url_for('static', filename='lessons/budgeting/example_budget.png') }}">
+                
+                <p>Perhaps the most important information you can glean from a budget is how much you're spending compared to how much you're earning. When you make more than you spend, you end up with a <span style="color:green">surplus</span> at the end of the month, whih you can put towards your goals. If you spend more than you earn, you end up with a <span style="color:red;">deficit</span>, which is indicative of poor financial health and is unsustainable long term.</p>
+
+                <h4>Why budget?</h4>
+                <p>Creating a budget gives you a great idea of your financial health, and whether you are on a sustainable path in terms of your spending.</p>
+            </article>
+        </main>
+    </body>
+</html>
