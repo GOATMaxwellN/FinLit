@@ -16,7 +16,7 @@
         <section>
             <header class="section-header">Introduction</header>
             <main class="cards-container">
-                <a>
+                <a href="{{ url_for('lessons.budgeting') }}">
                     <div class="card">
                         <div class="card__header">
                             <img src="{{ url_for('static', filename='dashboard/budgeting_card_image.webp') }}" alt="A calculator with the word 'budget' printed on its display, surrounded by cash and coins">
@@ -30,14 +30,14 @@
                         </div>
                     </div>
                 </a>
-                <a>
+                <a href="{{ url_for('lessons.saving') }}">
                     <div class="card">
                         <div class="card__header">
-                            <img src="{{ url_for('static', filename='dashboard/time_value_of_money_card_image.jpg') }}" alt="Several stacks of coins, one bigger than the last">
+                            <img src="{{ url_for('static', filename='dashboard/saving_card_image.jpeg') }}" alt="Fish bowl with coins and cash inside, labeled with a sticky note that says 'Savings'">
                         </div>
                         <div class="card__body">
-                            <h4>Time Value of Money</h4>
-                            <p>Learn about how money can time travel and how to make it work for you.</p>
+                            <h4>Saving</h4>
+                            <p>Learn about the importance of saving for the future.</p>
                         </div>
                         <div class="card__footer">
                             <span>Estimated time: 3hrs | Games to play: 2</span>
@@ -50,7 +50,38 @@
         <!-- Debt lessons -->
         <section>
             <header class="section-header">Debt</header>
-            <main class="cards-container"></main>
+            <main class="cards-container">
+                <a href="{{ url_for('lessons.debt') }}">
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="{{ url_for('static', filename='dashboard/debt_card_image.jpg') }}"
+                                alt="The word debt attached with a locked chain">
+                        </div>
+                        <div class="card__body">
+                            <h4>Debt</h4>
+                            <p>Learn about where debt comes from and how to responsibly manage it.</p>
+                        </div>
+                        <div class="card__footer">
+                            <span>Estimated time: 3hrs | Games to play: 2</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="{{ url_for('lessons.mortgage') }}">
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="{{ url_for('static', filename='dashboard/mortgage_card_image.jpg') }}"
+                                alt="A model house on top of paper with a bag of money drawn below it.">
+                        </div>
+                        <div class="card__body">
+                            <h4>Mortgage</h4>
+                            <p>Far off in the future you will want to buy a house. Learn about the process!</p>
+                        </div>
+                        <div class="card__footer">
+                            <span>Estimated time: 3hrs | Games to play: 2</span>
+                        </div>
+                    </div>
+                </a>
+            </main>
         </section>
     </main>
 
