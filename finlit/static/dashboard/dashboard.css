@@ -1,5 +1,7 @@
 :root {
     --main-green: #52BE80;
+    --light-green: #83E4AC;
+    --faded-green: #D5F5E3
 }
 
 body {
@@ -12,16 +14,50 @@ body {
 }
 
 main {
+    
+}
+
+.section-header {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: var(--light-green);
+}
+
+.section-header::before,
+.section-header::after {
+    background-color: var(--faded-green);
+    content: "";
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 0.1rem;
+    width: 45%;
+}
+
+.section-header::before {
+    right: 0.5rem;
+    margin-left: -50%;
+}
+
+.section-header::after {
+    left: 0.5rem;
+    margin-right: -50%;
+}
+
+.cards-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
 }
 
 a {
     color: inherit;
     text-decoration: inherit;
 }
+
 
 /* Card design from Lyon Etyo | codepen.io/lyon-etyo | codepen.io/lyon-etyo/pen/OJmyMGd */
 .card {
