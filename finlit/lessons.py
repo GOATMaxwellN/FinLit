@@ -22,6 +22,3 @@ def credit_cards():
 def line_of_credit():
     return render_template("lessons/line-of-credit.html")
 
-@bp.route("/mortgage/")
-def mortgage():
-    return render_template("lessons/mortgage.html")
