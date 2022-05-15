@@ -50,16 +50,9 @@ table, th, td {
     text-align: center;
 }
 
-table.components-of-a-budget tr:nth-child(even) {
-    background-color: var(--main-green);
-}
-table.components-of-a-budget tr:nth-child(odd) {
+table tr:nth-child(even) {
     background-color: var(--light-green);
 }
-
-table.ways-to-save tr:nth-child(even) {
-    background-color: var(--light-green);
-}
-table.ways-to-save tr:nth-child(odd) {
+table tr:nth-child(odd) {
     background-color: #C1EAD2;
 }
