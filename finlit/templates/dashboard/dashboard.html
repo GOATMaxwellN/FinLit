@@ -85,6 +85,28 @@
         </section>
     </main>
 
+    <!-- Investing lessons -->
+    <section>
+        <header class="section-header">Investing</header>
+        <main class="cards-container">
+            <a href="{{ url_for('lessons.compound_interest') }}">
+                <div class="card">
+                    <div class="card__header">
+                        <img src="{{ url_for('static', filename='dashboard/compound_interest_card_image.jpg') }}"
+                            alt="A small pile of credit cards.">
+                    </div>
+                    <div class="card__body">
+                        <h4>Compound Interest</h4>
+                        <p>Learn about the time value of money and how you can use compound interest to your advantage!</p>
+                    </div>
+                    <div class="card__footer">
+                        <span>Estimated time: 3hrs | Games to play: 2</span>
+                    </div>
+                </div>
+            </a>
+        </main>
+    </section>
+
     <section class="newsletter-btn-container">
         <button class="newsletter-btn">Sign up for the FinLit newsletter!</button>
     </section>

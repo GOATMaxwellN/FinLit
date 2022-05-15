@@ -22,3 +22,7 @@ def credit_cards():
 def line_of_credit():
     return render_template("lessons/line-of-credit.html")
 
+@bp.route("/compound-interest/")
+def compound_interest():
+    return render_template("lessons/compound-interest.html")
+
