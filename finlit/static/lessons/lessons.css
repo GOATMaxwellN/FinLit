@@ -69,3 +69,66 @@ img {
     width: 70%;
     margin: 0 15%;
 }
+
+.games-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+/* Card design from Lyon Etyo | codepen.io/lyon-etyo | codepen.io/lyon-etyo/pen/OJmyMGd */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(18rem, calc(18rem + 2vw), 20rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+.card__header>img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+}
+
+.card__body h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.card__body p {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.card__footer>span {
+    color: #666;
+    font-size: .8rem;
+}
+/* End of card classes */
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
