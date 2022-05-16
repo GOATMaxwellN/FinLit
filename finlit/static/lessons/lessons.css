@@ -64,3 +64,8 @@ ul {
 li {
     padding: 1rem;
 }
+
+img {
+    width: 70%;
+    margin: 0 15%;
+}
