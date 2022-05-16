@@ -21,18 +21,18 @@ main > article {
     margin: 0 auto;
 }
 
-main > article > p {
+p {
     line-height: 4rem;
     font-size: 1.5rem;
 }
 
-article > h4 {
+h4 {
     text-align: center;
     color: var(--main-green);
     font-size: 2rem;
 }
 
-article > h2 {
+h2 {
     text-align: center;
     color: var(--main-green);
 }
