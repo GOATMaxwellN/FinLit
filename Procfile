@@ -1,0 +1,1 @@
+web: gunicorn "finlit:create_app()"
