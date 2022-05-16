@@ -1,8 +1,8 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, redirect, url_for
 
 bp = Blueprint("home", __name__)
 
 @bp.route("/")
 @bp.route("/home/")
 def home():
-    return render_template("home/home.html")
+    return redirect(url_for("dashboard.dashboard"))
